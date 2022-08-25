@@ -15,6 +15,9 @@ public class TestBase {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", "10.0");
         capabilities.setCapability("deviceName", "Android Emulator");
+        capabilities.setCapability("platformVersion", "12");
+        capabilities.setCapability("udid", "RF8NA11YKPM");
+        
         capabilities.setCapability("app",
                 System.getProperty("user.dir") + "/apps/ToDo.apk");
         driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
