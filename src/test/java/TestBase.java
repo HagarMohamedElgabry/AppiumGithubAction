@@ -13,8 +13,9 @@ public class TestBase {
     public static void Android_setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("platformVersion", "9.0");
-        capabilities.setCapability("deviceName", "Android Emulator");
+        capabilities.setCapability("platformVersion", "12");
+        capabilities.setCapability("udid", "RF8NA11YKPM");
+        
         capabilities.setCapability("app",
                 System.getProperty("user.dir") + "/apps/ToDo.apk");
         driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
