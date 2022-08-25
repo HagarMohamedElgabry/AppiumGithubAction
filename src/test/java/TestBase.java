@@ -14,9 +14,7 @@ public class TestBase {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", "9.0");
-        capabilities.setCapability("deviceName", "Samsung Galaxy S20");
-        capabilities.setCapability("udid", "RF8NA11YKPM");
-
+        capabilities.setCapability("deviceName", "Android Emulator");
         capabilities.setCapability("app",
                 System.getProperty("user.dir") + "/apps/ToDo.apk");
         driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
